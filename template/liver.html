@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<script src="https://kit.fontawesome.com/5f3f547070.js" crossorigin="anonymous"></script>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='main.css') }}">
+	<title>liver_pred</title>
+    
+</head>
+	<style>
+    #main-footer
+    {
+      color: #FFFFFF;
+      font-family: "Segoe UI";
+      background: #2B2B2B;
+      text-align: center;
+      margin-top: 50px;
+      padding: 16px;
+      bottom: 8px;
+    }</style>
+<body>
+    <header class="site-header">
+  <nav class="navbar navbar-expand-md navbar-dark bg-steel fixed-top">
+    <div class="container">
+      <a class="navbar-brand mr-4" href="/">Medscape App</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggle" aria-controls="navbarToggle" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarToggle">
+        <div class="navbar-nav mr-auto">
+          <a class="nav-item nav-link" href="/">Home</a>
+          <a class="nav-item nav-link" href="/cancer">Cancer</a>
+          <a class="nav-item nav-link" href="/diabetes">Diabetes</a>
+          <a class="nav-item nav-link" href="/heart">Heart</a>
+          <a class="nav-item nav-link" href="/liver">Liver</a>
+          <a class="nav-item nav-link" href="/kidney">Kidney</a>
+
+        </div>
+        <!-- Navbar Right Side 
+        <div class="navbar-nav">
+          <a class="nav-item nav-link" href="/login">Login</a>
+          <a class="nav-item nav-link" href="/register">Register</a>
+        </div>-->
+      </div>
+    </div>
+  </nav>
+</header>
+<div class="container",class="form-group">
+<h1><center><b>Liver Health Diagnosis</b></center></h1>
+
+<div style="text-align: center; margin-top: 20px">
+       <img style="max-width: 600px" src="{{ url_for('static', filename='liver.jpg') }}"/><br>
+   </div>
+<p>
+<br>
+Liver disease can be inherited (genetic). Liver problems can also be caused by a variety of factors that damage the liver, such as viruses, alcohol use and obesity. Over time, conditions that damage the liver can lead to scarring (cirrhosis), which can lead to liver failure, a life-threatening condition. But early treatment may give the liver time to heal.<br>
+
+Your liver is an important organ that performs hundreds of tasks related to metabolism, energy storage, and detoxification of waste. It helps you digest food, convert it to energy, and store the energy until you need it. It also helps filter toxic substances out of your bloodstream.
+<br></p>
+
+<h3>Symptoms</h3>
+<p>Classic symptoms of liver disease include:</p>
+ <ul>
+  <li>Skin and eyes that appear yellowish (jaundice)</li>
+  <li>Abdominal pain and swelling</li>
+  <li>Dark urine color</li>
+  <li>Pale stool color</li>
+  <li>Chronic fatigue</li>
+  <li>Nausea or vomiting</li>
+  <li>Loss of appetite</li>
+</ul>
+<br> 
+<hr>
+<br>
+
+
+
+
+    <h3>Fill in the patient report details in the below fields :</h3><br>
+  <form action="/result" method="POST">
+
+
+   <div class="two-col">
+	<center>
+    <div class="col1">
+
+    <input type="text" id="Age" name="Age" placeholder="Age"><br>
+    <br>
+
+    <input type="text" id="Gender" name="Gender" placeholder="Gender (F:1,M:0)"><br>
+    <br>
+
+    <input type="text" id="Total_Bilirubin" name="Total_Bilirubin" placeholder="Total Bilirubin"><br>
+    <br>
+
+    <input type="text" id="Direct_Bilirubin" name="Direct_Bilirubin" placeholder="Direct Bilirubin"><br>
+    <br>
+
+    <input type="text" id="Alkaline_Phosphotase" name="Alkaline_Phosphotase" placeholder="Alkaline Phosphotase"><br>
+    <br>
+</div>
+
+
+    <div class="col2">
+
+    <input type="text" id="Alamine_Aminotransferase" name="Alamine_Aminotransferase" placeholder="Alamine Aminotransferase"><br>
+    <br>
+
+    <input type="text" id="Aspartate_Aminotransferase" name="Aspartate_Aminotransferase" placeholder="Aspartate Aminotransferase"><br>
+    <br>
+
+    <input type="text" id="Total_Protiens" name="Total_Protiens" placeholder="Total Protiens"><br>
+    <br>
+
+    <input type="text" id="Albumin" name="Albumin" placeholder="Albumin"><br>
+    <br>
+
+    <input type="text" id="Albumin_and_Globulin_Ratio" name="Albumin_and_Globulin_Ratio" placeholder="Albumin-Globulin Ratio"><br>
+</div>
+</center>
+</div>
+  
+
+
+    <input type="submit" class="liverbutton" value="Submit"><br><br>
+</form>
+
+
+    </div>
+<!-- Footer -->
+    <div class='footer'>
+           <div class="contact">
+               <a target="_blank" href="https://github.com/debashisdas55?tab=repositories"><i class="fab fa-github fa-lg contact-icon"></i></a>
+               <a target="_blank" href="https://www.linkedin.com/in/krishna-dalal-039692170/"><i class="fab fa-linkedin fa-lg contact-icon"></i></a>
+           </div>
+           <p class='footer-description'><b>Made with ❤️ by Krishna Dalal & Debashis Das.</b></p>
+       </div>
+</body>
+</html>

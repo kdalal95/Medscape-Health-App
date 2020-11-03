@@ -1,0 +1,216 @@
+body {
+    background: #eafaf1;
+    background-image:url('bg1.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+h1, h2, h3, h4, h5{
+  color: #444444;
+}
+
+.bg-steel {
+  background-color: #1a5276;
+}
+
+.site-header .navbar-nav .nav-link {
+  color: #cbd5db;
+}
+
+.site-header .navbar-nav .nav-link:hover {
+  color: #ffffff;
+}
+
+.site-header .navbar-nav .nav-link.active {
+  font-weight: 500;
+}
+
+.content-section {
+  background: #ffffff;
+  padding: 10px 20px;
+  border: 1px solid #dddddd;
+  border-radius: 3px;
+  margin-bottom: 20px;
+}
+
+.article-title {
+  color: #444444;
+}
+
+a.article-title:hover {
+  color: #428bca;
+  text-decoration: none;
+}
+
+.article-content {
+  white-space: pre-line;
+}
+
+.article-img {
+  height: 65px;
+  width: 65px;
+  margin-right: 16px;
+}
+
+.article-metadata {
+  padding-bottom: 1px;
+  margin-bottom: 4px;
+  border-bottom: 1px solid #e3e3e3
+}
+
+.article-metadata a:hover {
+  color: #333;
+  text-decoration: none;
+}
+
+.article-svg {
+  width: 25px;
+  height: 25px;
+  vertical-align: middle;
+}
+
+.account-img {
+  height: 125px;
+  width: 125px;
+  margin-right: 20px;
+  margin-bottom: 16px;
+}
+
+.account-heading {
+  font-size: 2.5rem;
+}
+
+/* Footer */
+.footer{
+	background-color: #aed6f1;
+	color: #000000;
+	padding: 12px;
+	text-align: center;
+
+}
+
+.resultfooter{
+	background-color: #aed6f1;
+	color: #000000;
+	padding: 12px;
+	text-align: center;
+
+  	
+}
+
+
+.contact-icon{
+	color: #000000;
+	padding: 7px;
+}
+
+.contact-icon:hover{
+	color: #a6a19a;
+}
+
+.footer-description{
+	margin: 0;
+	font-size: 15px;
+	font-weight: 100;
+}
+
+/* Three col*/
+
+
+.two-col {
+    overflow: hidden;/* Makes this div contain its floats */
+}
+
+.two-col .col1,
+.two-col .col2 ,
+.two-col .col3{
+    width: 30%;
+}
+
+.two-col .col1 {
+	float: left;
+	position: relative;
+
+
+}
+
+.two-col .col2 {
+	float: left;
+position: relative;
+
+}
+.two-col .col3{
+	float: left;
+position: relative;
+
+}
+
+/* Predict Button */
+.cancerbutton, .kidneybutton {
+	background-color:#0c0c0c;
+	border-radius: 5px;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:15px;
+	font-weight:bold;
+	padding:7px 30px;
+	margin-top: 10px;
+	text-decoration:none;
+	transition: 0.5s ease-out;
+  	position: relative;
+  	z-index: 5;
+  	margin-left: -100px;
+  
+}
+
+.diabetesbutton,.liverbutton {
+	background-color:#0c0c0c;
+	border-radius: 5px;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:15px;
+	font-weight:bold;
+	padding:7px 30px;
+	margin-top: 10px;
+	text-decoration:none;
+	transition: 0.5s ease-out;
+  	position: relative;
+  	z-index: 5;
+  	margin-left: 270px;
+  
+}
+
+
+.heartbutton {
+	background-color:#0c0c0c;
+	border-radius: 5px;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:15px;
+	font-weight:bold;
+	padding:7px 30px;
+	margin-top: 10px;
+	position: relative;
+	text-decoration:none;
+  
+}
+
+.cancerbutton:hover, .diabetesbutton:hover,.heartbutton:hover,.liverbutton:hover,.kidneybutton:hover{
+	background-color: #E9E9E9;
+	color: #000000;
+	box-shadow: inset 7px 3px 16px -10px rgba(0,0,0,0.75);
+}
+
+.cancerbutton:active,.diabetesbutton:active,.heartbutton:active,.liverbutton:active,.kidneybutton:active {
+	position:relative;
+	top:1px;
+}
+
+
+

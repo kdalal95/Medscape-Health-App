@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="x-ua-compatible" content="ie=edge">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<script src="https://kit.fontawesome.com/5f3f547070.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='main.css') }}">
+<title>Home</title>
+<!-- CSS -->
+
+</head>
+    <style>
+    #main-footer
+    {
+      color: #FFFFFF;
+      font-family: "Segoe UI";
+      background: #2B2B2B;
+      text-align: center;
+      margin-top: 108px;
+      padding: 16px;
+      bottom: 8px;
+    }</style>
+<body>
+
+  <header class="site-header">
+  <nav class="navbar navbar-expand-md navbar-dark bg-steel fixed-top">
+    <div class="container">
+
+     
+
+      <a class="navbar-brand mr-4" href="/">Medscape App</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggle" aria-controls="navbarToggle" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarToggle">
+        <div class="navbar-nav mr-auto">
+          
+          <a class="nav-item nav-link" href="/cancer">Cancer</a>
+          <a class="nav-item nav-link" href="/diabetes">Diabetes</a>
+          <a class="nav-item nav-link" href="/heart">Heart</a>
+          <a class="nav-item nav-link" href="/liver">Liver</a>
+          <a class="nav-item nav-link" href="/kidney">Kidney</a>
+
+        </div>
+      </div>
+    </div>
+  </nav>
+</header>
+
+  <div class= "container">
+
+    <h1><i><b><center>Say Hello to ML Doctor !!!!!</center></b></i></h1></p>
+            <div class='description'>
+    			<p><center>A Machine Learning Web App, Built with Flask, Deployed using Heroku.</center></p>
+    		</div>
+
+
+	<div style="text-align: center; margin-top: 20px">
+		<img style="max-width: 600px" src="{{ url_for('static', filename='doctor.jpg') }}"/><br><br>
+   	</div>
+
+    <p>
+      <h3>Overview</h3>
+      In todays time we see a lot of the shortage of the doctors in the world especially in India.
+	A lot of people are suffering a lot without the help of the proper medical checkup.</p>
+	<p>
+	Mobile devices and apps provide many benefits for medical care professionals, perhaps most significantly increased access to point-of-care tools, which has been shown to
+	support better clinical decision-making and improved patient outcomes
+	</p>
+        <p>We have built this webapp "Medscape App" to help clinicians identify the appropriate scans or tests to order, decreasing unnecessary procedures and reducing cost of care.
+	You can diagnose the following health conditions : 
+	<ul>
+		<li>Breast Cancer</li>
+		<li>Diabetes</li>
+		<li>Heart Condition</li>
+		<li>Liver Condition</li>
+		<li>Kidney Condition</li>
+	</ul>	
+
+        </p>
+        <hr>
+    </p>
+    <h3>Application</h3>
+    <ul>
+      <li>To remove the dependencies on the doctors.</li>
+      <li>For better clinical decision-making.</li>
+      <li>To improve accuracy of diagnosis.</li>
+      <li>To increase efficiency of medical care professionals.</li>
+      <li>To enhance productivity of clinicians.</li>
+
+    </ul>
+
+
+
+  </div>
+
+
+<!-- Footer -->
+    <div class='footer'>
+           <div class="contact">
+               <a target="_blank" href="https://github.com/debashisdas55?tab=repositories"><i class="fab fa-github fa-lg contact-icon"></i></a>
+               <a target="_blank" href="https://www.linkedin.com/in/krishna-dalal-039692170/"><i class="fab fa-linkedin fa-lg contact-icon"></i></a>
+           </div>
+           <p class='footer-description'><b>Made with ❤️ by Krishna Dalal & Debashis Das.</b></p>
+       </div>
+</body>
+</html>

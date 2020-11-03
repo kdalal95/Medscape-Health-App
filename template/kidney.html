@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<script src="https://kit.fontawesome.com/5f3f547070.js" crossorigin="anonymous"></script>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='main.css') }}">
+	<title>kidney_pred</title>
+    
+</head>
+	<style>
+    #main-footer
+    {
+      color: #FFFFFF;
+      font-family: "Segoe UI";
+      background: #2B2B2B;
+      text-align: center;
+      margin-top: 1px;
+      padding: 16px;
+      bottom: 8px;
+    }</style>
+	
+<body>
+    <header class="site-header">
+  <nav class="navbar navbar-expand-md navbar-dark bg-steel fixed-top">
+    <div class="container">
+      <a class="navbar-brand mr-4" href="/">Medscape App</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggle" aria-controls="navbarToggle" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarToggle">
+        <div class="navbar-nav mr-auto">
+          <a class="nav-item nav-link" href="/">Home</a>
+          <a class="nav-item nav-link" href="/cancer">Cancer</a>
+          <a class="nav-item nav-link" href="/diabetes">Diabetes</a>
+          <a class="nav-item nav-link" href="/heart">Heart</a>
+          <a class="nav-item nav-link" href="/liver">Liver</a>
+          <a class="nav-item nav-link" href="/kidney">Kidney</a>
+
+
+        </div>
+        <!-- Navbar Right Side
+        <div class="navbar-nav">
+          <a class="nav-item nav-link" href="/login">Login</a>
+          <a class="nav-item nav-link" href="/register">Register</a>
+        </div>-->
+      </div>
+    </div>
+  </nav>
+</header>
+<div class="container",class="form-group">
+
+    <h1><center><b>Kidney Diagnosis</b></center></h1>
+
+
+
+<div style="text-align: center; margin-top: 20px">
+       <img style="max-width: 600px" src="{{ url_for('static', filename='kidney.jpg') }}"/>
+   </div>
+<p>
+<br>
+The kidneys are two bean-shaped organs. Each kidney is about the size of a fist. Your kidneys filter extra water and wastes out of your blood and make urine. Kidney disease means your kidneys are damaged and can’t filter blood the way they should.<br>
+
+You are at greater risk for kidney disease if you have diabetes or high blood pressure. If you experience kidney failure, treatments include kidney transplant or dialysis. Other kidney problems include acute kidney injury, kidney cysts, kidney stones, and kidney infections.
+<br>
+</p>
+<h3>Symptoms</h3>
+<p>A number of symptoms can develop if kidney disease is not found early or it gets worse despite treatment. Symptoms can include:
+</p>
+   <ul>
+    <li>Swollen ankles, feet or hands – as a result of water retention (oedema)</li>
+    <li>Weight loss and poor appetite</li>
+    <li>Shortness of breath</li>
+    <li>Blood in your pee (urine)</li>
+    <li>Fatigue</li>
+    <li>Erectile dysfunction in men</li>
+    <li>Persistent itching</li>
+    <li>High blood potassium (hyperkalemia)</li>
+    <li>High blood pressure (hypertension) that's difficult to control</li>
+  </ul>
+  <br>
+
+
+    <h3>Fill in the patient report details in the below fields :</h3><br>
+  <form action="/result" method="POST">
+
+    <div class="two-col">
+	<center>
+    <div class="col1">
+
+    <input type="text" id="age" name="age" placeholder="Age"><br>
+    <br>
+
+    <input type="text" id="bp" name="bp" placeholder="Blood Pressure"><br>
+    <br>
+
+    <input type="text" id="sg" name="sg" placeholder="Specific Gravity"><br>
+    <br>
+
+    <input type="text" id="al" name="al" placeholder="Albumin"><br>
+    <br>
+
+    <input type="text" id="su" name="su" placeholder="Sugar"><br>
+    <br>
+
+    <input type="text" id="pc" name="pc" placeholder="Pus Cell"><br>
+    <br>
+</div>
+    <div class="col2">
+
+    <input type="text" id="pcc" name="pcc" placeholder="Pus Cell Clumps"><br>
+    <br>
+
+    <input type="text" id="ba" name="ba" placeholder="Bacteria"><br>
+    <br>
+
+    <input type="text" id="bgr" name="bgr" placeholder="Blood Glucouse Random"><br>
+    <br>
+
+    <input type="text" id="bu" name="bu" placeholder="Blood Urea"><br>
+    <br>
+
+    <input type="text" id="sc" name="sc" placeholder="Serum Creatinine"><br>
+    <br>
+
+
+    <input type="text" id="hemo" name="hemo" placeholder="Hemoglobin"><br>
+    <br>
+</div>
+    <div class="col3">
+
+    <input type="text" id="htn" name="htn" placeholder="Hypper Tension"><br>
+    <br>
+
+    <input type="text" id="dm" name="dm" placeholder="Diabetes Mellitus"><br>
+    <br>
+
+    <input type="text" id="cad" name="cad" placeholder="Coronary Artery Disease"><br>
+    <br>
+
+    <input type="text" id="appet" name="appet" placeholder="Appetite"><br>
+    <br>
+
+    <input type="text" id="pe" name="pe" placeholder="Pedal Edema"><br>
+    <br>
+
+    <input type="text" id="ane" name="ane" placeholder="Anemia"><br>
+    <br>
+</div>
+</center>
+</div>
+
+
+   <center> <input type="submit" class="kidneybutton" value="Submit"></center><br><br>
+</form>
+
+
+    </div>
+</div>
+</div>
+
+
+
+<!-- Footer -->
+    <div class='footer'>
+           <div class="contact">
+               <a target="_blank" href="https://github.com/debashisdas55?tab=repositories"><i class="fab fa-github fa-lg contact-icon"></i></a>
+               <a target="_blank" href="https://www.linkedin.com/in/krishna-dalal-039692170/"><i class="fab fa-linkedin fa-lg contact-icon"></i></a>
+           </div>
+           <p class='footer-description'><b>Made with ❤️ by Krishna Dalal & Debashis Das.</b></p>
+       </div>
+</body>
+</html>

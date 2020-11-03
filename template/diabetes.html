@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<script src="https://kit.fontawesome.com/5f3f547070.js" crossorigin="anonymous"></script>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='main.css') }}">
+	<title>Diabetes_pred</title>
+    
+</head>
+	<style>
+    #main-footer
+    {
+      color: #FFFFFF;
+      font-family: "Segoe UI";
+      background: #2B2B2B;
+      text-align: center;
+      margin-top: 125px;
+      padding: 16px;
+      bottom: 8px;
+    }</style>
+<body>
+    <header class="site-header">
+  <nav class="navbar navbar-expand-md navbar-dark bg-steel fixed-top">
+    <div class="container">
+      <a class="navbar-brand mr-4" href="/">Medscape App</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggle" aria-controls="navbarToggle" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarToggle">
+        <div class="navbar-nav mr-auto">
+          <a class="nav-item nav-link" href="/">Home</a>
+
+          <a class="nav-item nav-link" href="/cancer">Cancer</a>
+          <a class="nav-item nav-link" href="/diabetes">Diabetes</a>
+          <a class="nav-item nav-link" href="/heart">Heart</a>
+          <a class="nav-item nav-link" href="/liver">Liver</a>
+          <a class="nav-item nav-link" href="/kidney">Kidney</a>
+        </div>
+        <!-- Navbar Right Side
+        <div class="navbar-nav">
+          <a class="nav-item nav-link" href="/login">Login</a>
+          <a class="nav-item nav-link" href="/register">Register</a>
+        </div>-->
+      </div>
+    </div>
+  </nav>
+</header>
+<div class="container",class="form-group">
+        <h1><center><b>Diabetes Diagnosis</b></center></h1>
+
+<div style="text-align: center; margin-top: 20px">
+       <img style="max-width: 600px" src="{{ url_for('static', filename='diabetes.jpg') }}"/>
+   </div>
+<p>
+<br>
+Diabetes is the condition in which the body does not properly process food for use as energy.
+Most of the food we eat is turned into glucose, or sugar, for our bodies to use for energy. The
+pancreas, an organ that lies near the stomach, makes a hormone called insulin to help
+glucose get into the cells of our bodies. When you have diabetes, your body either doesn't
+make enough insulin or can't use its own insulin as well as it should. This causes sugars to
+build up in your blood. This is why many people refer to diabetes as “sugar.”
+Diabetes can cause serious health complications including heart disease, blindness, kidney
+failure, and lower-extremity amputations.
+ 
+</p>
+<h3>Symptoms</h3>
+<p>General symptoms od diabetes include:</p>
+
+ <ul>
+  <li>Increased hunger</li>
+  <li>Increased thirst</li>
+  <li>Weight loss</li>
+  <li>Frequent urination</li>
+  <li>Blurry vision</li>
+  <li>Extreme fatigue</li>
+  <li>Sores that don’t heal</li>
+</ul>
+<br> 
+<hr>
+<br>
+
+
+
+
+
+    <h3>Fill in the patient report details in the below fields :</h3><br>
+  <form action="/result" method="POST">
+
+    <div class="two-col">
+<center>
+    <div class="col1">
+
+    <input type="text" id="Pregnancies" name="Pregnancies" placeholder="Pregnancies"><br>
+    <br>
+
+    <input type="text" id="Glucose" name="Glucose" placeholder="Glucose"><br>
+    <br>
+
+    <input type="text" id="BloodPressure" name="BloodPressure" placeholder="BloodPressure"><br>
+    <br>
+
+    <input type="text" id="SkinThickness" name="SkinThickness" placeholder="SkinThickness"><br>
+    <br>
+</div>
+<div class="col2">
+
+    <input type="text" id="Insulin" name="Insulin" placeholder="Insulin"><br>
+    <br>
+
+    <input type="text" id="BMI" name="BMI" placeholder="BMI"><br>
+    <br>
+
+    <input type="text" id="DiabetesPedigreeFunction" name="DiabetesPedigreeFunction" placeholder="DiabetesPedigreeFunction"><br>
+    <br>
+
+    <input type="text" id="Age" name="Age" placeholder="Age">
+</div>
+</center>
+</div>
+  
+
+
+
+    <input type="submit" class="diabetesbutton" value="Submit"><br><br>
+</form>
+
+
+    </div>
+
+
+
+
+<!-- Footer -->
+    <div class='footer'>
+           <div class="contact">
+               <a target="_blank" href="https://github.com/debashisdas55?tab=repositories"><i class="fab fa-github fa-lg contact-icon"></i></a>
+               <a target="_blank" href="https://www.linkedin.com/in/krishna-dalal-039692170/"><i class="fab fa-linkedin fa-lg contact-icon"></i></a>
+           </div>
+           <p class='footer-description'><b>Made with ❤️ by Krishna Dalal & Debashis Das.</b></p>
+       </div>
+</body>
+</html>
